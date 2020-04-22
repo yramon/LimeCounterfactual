@@ -1,4 +1,4 @@
-# Heuristic search algorithm for finding Evidence Counterfactuals based on LIME and lin-SEDC
+# LIME-Counterfactual: a heuristic search algorithm for finding Evidence Counterfactuals based on LIME and lin-SEDC
 
 The LIME-Counterfactual (LIME-C) algorithm is a model-agnostic heuristic search algorithm for finding Evidence Counterfactuals, which are instance-level explanations for explaining model predictions of any classifier. It returns a minimal set of features so that removing these features results in a predicted class change. Removing means setting the corresponding feature value to zero. LIME-Counterfactual has been proposed [in this paper](https://arxiv.org/abs/1912.01819) for explaining binary classifiers trained on high-dimensional, sparse data such as textual data and behavioral big data. 
 
