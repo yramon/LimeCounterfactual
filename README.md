@@ -9,6 +9,6 @@ At the moment, LIME-C supports binary classifiers built on high-dimensional, spa
 # Visualization of the LIME-C algorithm
 
 <br>
-<img height="400" src="https://github.com/yramon/LimeCounterfactual/blob/master/img/LimeCounterfactual.png" />
+<img height="500" src="https://github.com/yramon/LimeCounterfactual/blob/master/img/LimeCounterfactual.png" />
 <br>
 
