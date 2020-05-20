@@ -6,6 +6,8 @@ LIME-C is a hybrid algorithm that makes use of the LIME explainer (proposed by [
 
 At the moment, LIME-C supports binary classifiers built on high-dimensional, sparse data where a "zero" feature value corresponds to the "absence" of the feature. For instance, for behavioral data such as web browsing data, visiting an URL would set the feature value to 1, else 0. The "nonzero" value indicates that the behavior is present or the feature is "active". Setting the feature value to zero would remove this evidence from the browsing history of a user. Another example is textual data, where each token is represented by an individual feature. Setting the feature value (term frequency, tf-idf, etc.) to zero would mean that the corresponding token is removed from the document. Because the reference value when removing a feature from the instance is zero (zero means "missing"), and only active features can be part of the Evidence Counterfactual explanation, the LIME-C implementation makes use of the [LimeTextExplainer](https://github.com/marcotcr/lime/blob/master/lime/lime_text.py). Moreover, LimeTextExplainer uses the cosine distance to measure how "far" the perturbed instances are from the original instance (which makes more sense in the context of big, sparse data than the Euclidean distance that's used in LimeTabular). 
 
+Read [here](https://www.kdnuggets.com/2020/05/evidence-counterfactuals-predictive-models-big-data.html) our blogpost on the use of Evidence Counterfactuals. 
+
 # Visualization of the LIME-C algorithm
 
 <br>
